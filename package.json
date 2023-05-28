@@ -1,0 +1,18 @@
+{
+  "name": "sample-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "//" : "la partie scripts va executer les different scripts",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch",
+    "//" : "prettier permet de réorganiger l'ordre des classes tel que tailwind recommande",
+    "prettier": "npx prettier --write **/*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.3.0"
+  }
+}

@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/**/
+@layer utilities{
+    /*ici on va calculer la hauteur minimale d'une section dans le body*/
+    .section-min-height{
+        min-height: calc(100vh - 68px);
+    }
+    /*on definir un ensemble de propriéte qui va etre applique a un element de notre choix*/
+    .toogleBtn{
+        @apply [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:bg-transparent [&>div]:rotate-[720deg]
+    }
+}
